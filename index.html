@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shoe Shop</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group textarea {
+      height: 120px;
+    }
+    .form-group input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="about us.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to Shoe Shop</h1>
+    <p>Find the perfect pair of shoes for any occasion.</p>
+    <a href="#shop" class="cta-button">Shop Now</a>
+    <div class="collection-list">
+      <div class="collection">
+        <img src="6.jpeg" alt="Casuals">
+        <h3>Casuals</h3>
+      </div>
+      <div class="collection">
+        <img src="1.webp" alt="Sports">
+        <h3>Sports</h3>
+      </div>
+      <div class="collection">
+        <img src="9.webp" alt="Men">
+        <h3>Men</h3>
+      </div>
+      <div class="collection">
+        <img src="8.webp" alt="Women">
+        <h3>Women</h3>
+      </div>
+      <div class="collection">
+        <img src="7.webp" alt="Kids">
+        <h3>Kids</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop">
+    <h2>Shop Our Collection</h2>
+    <div class="product-list">
+      <!-- Add your shoe products here -->
+      <div class="product">
+        <img src="1.webp" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Price: 49.99/-</p>
+        <a href="product1.html" class="buy-button">Add to Cart</a>
+      </div>
+
+      <div class="product">
+        <img src="2.webp" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Price: 59.99/-</p>
+        <a href="product1.html" class="buy-button">Add to Cart</a>
+      </div>
+
+      <!-- Add more product items as needed -->
+      <div class="product">
+        <img src="3.webp" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Price: 59.99/-</p>
+        <a href="product1.html" class="buy-button">Add to Cart</a>
+      </div>
+      <div class="product">
+        <img src="4.webp" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Price: 59.99/-</p>
+        <a href="product1.html" class="buy-button">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>The customer is very important, the customer will be followed by the customer. Massage and soft touch. There's no need for a result, it's a real investment, it's a ferment.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@shoeshop.com</p>
+    <p>Phone: 123-456-7890</p>
+
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <form action="submit_form.php" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Shoe Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
